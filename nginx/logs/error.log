@@ -1,0 +1,1 @@
+2020/11/27 09:53:28 [emerg] 1#1: host not found in upstream "web" in /etc/nginx/conf.d/api_yamdb.conf:16
