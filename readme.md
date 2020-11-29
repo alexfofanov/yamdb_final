@@ -1,5 +1,5 @@
 # API сервиса YaMDb
-![api_yamdb](https://github.com/alexfofanov/yamdb_final/workflows/api_yamdb/badge.svg)
+![api_yamdb](https://github.com/alexfofanov/yamdb_final/workflows/api_yamdb%20workflow/badge.svg)
 
 Сервис YaMDb предназначен для сбора отзывов (Review) пользователей на произведения (Title). Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список категорий (Category) может быть расширен.
 

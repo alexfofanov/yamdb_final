@@ -10,7 +10,7 @@ from .permissions import IsOwnerAdminModeratorToEdit
 
 class NestedResourceMixin:
     """
-    Mixin for GenericAPIView for nested resources. E.g., in /movies/<movie_id>/reviews/ 
+    Mixin for GenericAPIView for nested resources. E.g., in /movies/<movie_id>/reviews/
     the 'Review.movie' field references 'Movie' objects identified by <movie_id>.
     Requires class attributes parent_object, parent_field, parent_url_id and
     the _serializer_save_fields method.
