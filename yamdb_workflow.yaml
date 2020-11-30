@@ -52,8 +52,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             git clone https://github.com/alexfofanov/yamdb_final.git
-	    cd yamdb_final
-	    sudo docker-compose down -v			
+            cd yamdb_final
+            sudo docker-compose down -v			
             sudo docker-compose up
   send_message:
     runs-on: ubuntu-latest
