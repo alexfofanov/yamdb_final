@@ -6,15 +6,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Copy file via scp
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_KEY }}
-          rm: true
-          source: "./*"
-          target: "/home/alex/yamdb_final"
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
         with:
@@ -22,6 +13,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/alex/yamdb_final
+            cd /home/alex/
+            git clone https://alexfofanov:7190ea8a6a9b844c956d08a0a002f683a83115f8@github.com/alexfofanov/yamdb_final.git
             sudo docker-compose down -v			
             sudo docker-compose up
