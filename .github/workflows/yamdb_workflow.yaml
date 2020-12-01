@@ -12,7 +12,8 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "."
+          rm: true
+          source: "./*"
           target: "/home/alex/yamdb_final"
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
