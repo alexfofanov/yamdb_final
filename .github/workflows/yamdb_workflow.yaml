@@ -14,7 +14,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/alex/
-            git clone https://alexfofanov:7190ea8a6a9b844c956d08a0a002f683a83115f8@github.com/alexfofanov/yamdb_final.git
+            rm -rf /home/alex/yamdb_final
+            git clone https://alexfofanov:${{ ACCESS_TOKEN }}@github.com/alexfofanov/yamdb_final.git
             cd /home/alex/yamdb_final
             sudo docker-compose down -v			
             sudo docker-compose up -d
