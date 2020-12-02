@@ -15,7 +15,7 @@ jobs:
           script: |
             cd /home/alex/
             rm -rf /home/alex/yamdb_final
-            git clone https://alexfofanov:${{ ACCESS_TOKEN }}@github.com/alexfofanov/yamdb_final.git
+            git clone https://alexfofanov:${{ secrets.ACCESS_TOKEN }}@github.com/alexfofanov/yamdb_final.git
             cd /home/alex/yamdb_final
             sudo docker-compose down -v			
             sudo docker-compose up -d
