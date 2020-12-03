@@ -5,7 +5,7 @@ volumes:
   static_data:
 services:
   db:
-    image: postgres:latest
+    image: postgres:12.4
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
