@@ -1,9 +1,11 @@
 import os
 from datetime import timedelta
 
+from django.core.management import utils
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', default=utils.get_random_secret_key())
 
 DEBUG = False
 
