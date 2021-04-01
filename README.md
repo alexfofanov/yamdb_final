@@ -7,15 +7,13 @@
 
 ### Установите docker и docker-compose
 Проверьте установлен ли docker и docker-compose
-
     docker -v
     docker-compose -v
 
 В случае отсутствия установите согласно документации по установке [docker](https://docs.docker.com/engine/install/) и [docker-compose](https://docs.docker.com/compose/install/) на официальном сайте.
 
-
 ### Создайте файл .env с переменными окружения для работы с БД в корне приложения и добавьте в него следующие параметры:
-
+    SECRET_KEY=p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs #секретный ключ Django (установите свой)
     DB_ENGINE=django.db.backends.postgresql # указываем, что работаем с postgresql
     DB_NAME=postgres # имя базы данных
     POSTGRES_USER=postgres # логин для подключения к базе данных
@@ -38,3 +36,14 @@
 
 ### Для остановки и удаления сервиса используйте команду
     docker-compose down
+
+### Технологии    
++ Python  
++ Django
++ Django REST Framework
++ PostgreSQL
++ Gunicorn
++ Nginx
++ Docker
++ Docker Compose
++ GitHub Actions
