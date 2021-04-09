@@ -38,7 +38,7 @@
     docker-compose down
 
 ### Технологии    
-+ Python  
++ Python3
 + Django
 + Django REST Framework
 + PostgreSQL
