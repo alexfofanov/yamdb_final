@@ -21,7 +21,7 @@ mccabe==0.6.1             # via pylint
 more-itertools==8.2.0     # via pytest
 packaging==20.3           # via pytest
 pluggy==0.13.1            # via pytest
-py==1.8.1                 # via pytest
+py==1.10.0                 # via pytest
 pyjwt==1.7.1              # via djangorestframework-simplejwt
 pylint-django==2.0.15     # via -r requirements.in
 pylint-plugin-utils==0.6  # via pylint-django
