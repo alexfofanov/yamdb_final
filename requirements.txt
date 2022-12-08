@@ -7,7 +7,7 @@
 asgiref==3.2.7            # via django
 astroid==2.4.0            # via pylint
 attrs==19.3.0             # via pytest
-certifi==2020.4.5.1       # via requests
+certifi==2022.12.7       # via requests
 chardet==3.0.4            # via requests
 django-dotenv==1.4.2      # via -r requirements.in
 django==3.1.13            # via -r requirements.in, djangorestframework, djangorestframework-simplejwt
